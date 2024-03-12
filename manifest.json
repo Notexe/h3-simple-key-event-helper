@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"id": "Notex.SimpleKeyEventHelper",
 	"name": "Simple Key Event Helper",
 	"description": "Adds a helper entitytemplate for developers who wish to add custom key bindings into their mod.",
