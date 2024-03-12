@@ -1,0 +1,25 @@
+{
+	"hash_value": "005732D7DF12E177",
+	"hash_offset": 28250980,
+	"hash_size": 2147483648,
+	"hash_resource_type": "ASET",
+	"hash_reference_table_size": 31,
+	"hash_reference_table_dummy": 0,
+	"hash_size_final": 12,
+	"hash_size_in_memory": 4294967295,
+	"hash_size_in_video_memory": 4294967295,
+	"hash_reference_data": [
+		{
+			"hash": "[assembly:/ui/controls/SimpleKeyEventHelper.swf?/common.BaseControl.uic].pc_entitytype",
+			"flag": "1F"
+		},
+		{
+			"hash": "[modules:/zuicontrollayoutlegacyaspect.class].pc_entitytype",
+			"flag": "1F"
+		},
+		{
+			"hash": "[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/SimpleKeyEventHelper.swf?/common.BaseControl.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entityblueprint",
+			"flag": "1F"
+		}
+	]
+}

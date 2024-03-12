@@ -1,0 +1,21 @@
+{
+	"hash_value": "009BD8B48D26C48B",
+	"hash_offset": 22219579,
+	"hash_size": 2147483648,
+	"hash_resource_type": "UICT",
+	"hash_reference_table_size": 22,
+	"hash_reference_table_dummy": 0,
+	"hash_size_final": 0,
+	"hash_size_in_memory": 4294967295,
+	"hash_size_in_video_memory": 4294967295,
+	"hash_reference_data": [
+		{
+			"hash": "[modules:/zuicontrolentity.class].pc_entitytype",
+			"flag": "1F"
+		},
+		{
+			"hash": "[assembly:/ui/controls/SimpleKeyEventHelper.swf?/common.BaseControl.uic].pc_entityblueprint",
+			"flag": "1F"
+		}
+	]
+}

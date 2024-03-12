@@ -4,6 +4,7 @@
 	"id": "Notex.SimpleKeyEventHelper",
 	"name": "Simple Key Event Helper",
 	"description": "Adds a helper entitytemplate for developers who wish to add custom key bindings into their mod.",
+	"contentFolders": ["content"],
 	"authors": ["Notex"],
 	"frameworkVersion": "2.33.7",
 	"updateCheck": "https://github.com/Notexe/h3-simple-key-event-helper/releases/latest/download/updates.json"

@@ -1,0 +1,8 @@
+common.BaseControl:
+005732D7DF12E177.ASET,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/SimpleKeyEventHelper.swf?/common.BaseControl.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entitytype
+00EB4ED49FCDFF5D.ASEB,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/SimpleKeyEventHelper.swf?/common.BaseControl.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entityblueprint
+
+simplekeyeventhelper.SimpleKeyEventHelper:
+00E6691B47001984.ASET,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/SimpleKeyEventHelper.swf?/simplekeyeventhelper.SimpleKeyEventHelper.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entitytype
+00F19490F130A22B.ASEB,[assembly:/templates/aspectdummy.aspect]([assembly:/ui/controls/SimpleKeyEventHelper.swf?/simplekeyeventhelper.SimpleKeyEventHelper.uic].entitytype,[modules:/zuicontrollayoutlegacyaspect.class].entitytype).pc_entityblueprint
+

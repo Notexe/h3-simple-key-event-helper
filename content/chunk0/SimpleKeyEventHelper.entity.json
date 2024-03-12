@@ -1,0 +1,62 @@
+{
+	"tempHash": "00ECDCEA4DE37F93",
+	"tbluHash": "008B70FF2C58388A",
+	"rootEntity": "cafe099752f99e2c",
+	"entities": {
+		"cafe099752f99e2c": {
+			"parent": null,
+			"name": "SimpleKeyEventHelper",
+			"factory": "[modules:/zentity.class].pc_entitytype",
+			"blueprint": "[modules:/zentity.class].pc_entityblueprint",
+			"inputCopying": { "Enable": { "Enable": ["cafe457f1b485c64"] }, "Disable": { "Disable": ["cafe457f1b485c64"] } },
+			"propertyAliases": {
+				"m_pDataProvider": [{ "originalProperty": "m_pDataProvider", "originalEntity": "cafe457f1b485c64" }],
+				"m_sModifierKeyName": [{ "originalProperty": "m_sModifierKeyName", "originalEntity": "cafe457f1b485c64" }],
+				"m_sKeyName": [{ "originalProperty": "m_sKeyName", "originalEntity": "cafe457f1b485c64" }]
+			},
+			"exposedInterfaces": {
+				"IUIControlEntity": "cafe457f1b485c64",
+				"ZUIDataProvider": "cafe457f1b485c64",
+				"ZUIControlEntity": "cafe457f1b485c64"
+			}
+		},
+		"cafe457f1b485c64": {
+			"parent": "cafe099752f99e2c",
+			"name": "SimpleKeyEventHelper",
+			"factory": "[assembly:/ui/controls/SimpleKeyEventHelper.swf?/simplekeyeventhelper.SimpleKeyEventHelper.uic].pc_entitytype",
+			"blueprint": "[assembly:/ui/controls/SimpleKeyEventHelper.swf?/simplekeyeventhelper.SimpleKeyEventHelper.uic].pc_entityblueprint",
+			"properties": {
+				"m_pMovieResource": {
+					"type": "ZRuntimeResourceID",
+					"value": { "resource": "[assembly:/ui/controls/SimpleKeyEventHelper.swf].pc_swf", "flag": "5F" }
+				},
+				"m_sClassName": { "type": "ZString", "value": "simplekeyeventhelper.SimpleKeyEventHelper" },
+				"m_pDataProvider": { "type": "SEntityTemplateReference", "value": null },
+				"m_sModifierKeyName": { "type": "ZString", "value": "None" },
+				"m_sKeyName": { "type": "ZString", "value": "" }
+			},
+			"outputCopying": {
+				"Pressed": { "Pressed": ["cafe099752f99e2c"] },
+				"Down": { "Down": ["cafe099752f99e2c"] },
+				"Up": { "Up": ["cafe099752f99e2c"] }
+			}
+		},
+		"cafe75e5f2cf5840": {
+			"parent": "cafe099752f99e2c",
+			"name": "ControlTree",
+			"factory": "[modules:/zuicontroltreeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zuicontroltreeentity.class].pc_entityblueprint",
+			"properties": { "m_pRootControlEntity": { "type": "SEntityTemplateReference", "value": "cafe457f1b485c64" } }
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}

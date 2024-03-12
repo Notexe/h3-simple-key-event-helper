@@ -1,0 +1,8 @@
+common.BaseControl:
+009BD8B48D26C48B.UICT,[assembly:/ui/controls/SimpleKeyEventHelper.swf?/common.BaseControl.uic].pc_entitytype
+002494C1461ACB25.UICB,[assembly:/ui/controls/SimpleKeyEventHelper.swf?/common.BaseControl.uic].pc_entityblueprint
+
+simplekeyeventhelper.SimpleKeyEventHelper:
+00376E31FBA1E6B7.UICT,[assembly:/ui/controls/SimpleKeyEventHelper.swf?/simplekeyeventhelper.SimpleKeyEventHelper.uic].pc_entitytype
+00FDD03F03A3CAB7.UICB,[assembly:/ui/controls/SimpleKeyEventHelper.swf?/simplekeyeventhelper.SimpleKeyEventHelper.uic].pc_entityblueprint
+

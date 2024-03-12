@@ -1,0 +1,17 @@
+{
+	"hash_value": "00FDD03F03A3CAB7",
+	"hash_offset": 22219511,
+	"hash_size": 2147483716,
+	"hash_resource_type": "UICB",
+	"hash_reference_table_size": 13,
+	"hash_reference_table_dummy": 0,
+	"hash_size_final": 114,
+	"hash_size_in_memory": 62,
+	"hash_size_in_video_memory": 4294967295,
+	"hash_reference_data": [
+		{
+			"hash": "[modules:/zuicontrolentity.class].pc_entityblueprint",
+			"flag": "1F"
+		}
+	]
+}
