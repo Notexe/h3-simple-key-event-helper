@@ -104,8 +104,8 @@ JSON file:
 #### Properties
 
 -   `m_bEnabled`: bool (defaults to true)
--   `m_sModifierKeyName`: ZString (defaults to None)
--   `m_sKeyName`: ZString (defaults to empty)
+-   `m_sModifierKeyName`: ZString (defaults to "None")
+-   `m_sKeyName`: ZString (defaults to "")
 -   `m_pDataProvider`: SEntityTemplateReference (defaults to null)
 
 See JSON example above for possible m_sModifierKeyName and m_sKeyName values
