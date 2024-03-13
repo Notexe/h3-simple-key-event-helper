@@ -8,7 +8,13 @@ Adds a helper entitytemplate for developers who wish to add custom key bindings 
 
 ## Usage
 
-This helper mod allows you to setup custom keybinds which you can then use to fire pins in your mod.
+This helper mod allows you to setup custom keybinds which you can then use to fire pins in your mod. Please reference this mod in the "requirements" section in your mod's manifest like so:
+
+```json
+"requirements": [
+  "Notex.SimpleKeyEventHelper"
+]
+```
 
 There are two methods of using this mod:
 
@@ -44,6 +50,8 @@ SimpleKeyEventHelper entity:
 ```
 
 ### Second method
+
+SimpleKeyEventHelper entity:
 
 ```json
 {
@@ -108,6 +116,6 @@ See JSON example for possible values
 
 #### Output pins
 
--   `Pressed`: void (Fires on key pressed down and repeats if held for over a second.)
+-   `Pressed`: void (Fires on key pressed down and repeats if held for over a second)
 -   `Down`: void (Fires on key pressed down)
 -   `Up`: void (Fires on key released)
