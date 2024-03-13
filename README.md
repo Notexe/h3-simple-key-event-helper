@@ -8,7 +8,7 @@ Adds a helper entitytemplate for developers who wish to add custom key bindings 
 
 ## Known issues
 
--   Toggling the `m_bEnabled` property results it keybinds not being set correctly if you are using the dynamic object method. I suspect the game for some reason falls back to the m_sModifierKeyName and m_sKeyName properties.
+-   Toggling the `m_bEnabled` property results in the keybinds not being set correctly if you are using the dynamic object method. I suspect the game for some reason falls back to the `m_sModifierKeyName` and `m_sKeyName` properties.
     -   Workaround: Use the Enable/Disable pins instead.
 
 ## Usage
