@@ -103,11 +103,12 @@ JSON file:
 
 #### Properties
 
--   `m_sModifierKeyName`: ZString
--   `m_sKeyName`: ZString
--   `m_pDataProvider`: SEntityTemplateReference
+-   `m_bEnabled`: bool (defaults to true)
+-   `m_sModifierKeyName`: ZString (defaults to None)
+-   `m_sKeyName`: ZString (defaults to empty)
+-   `m_pDataProvider`: SEntityTemplateReference (defaults to null)
 
-See JSON example for possible values
+See JSON example above for possible m_sModifierKeyName and m_sKeyName values
 
 #### Input pins
 
