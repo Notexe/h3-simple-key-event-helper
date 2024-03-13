@@ -79,6 +79,17 @@ public class SimpleKeyEventHelper extends BaseControl {
 		}
 	}
 
+	public function set m_bEnabled(bool:Boolean):void {
+		if (bool) {
+			m_enabled = true;
+			addKeyListeners();
+
+		} else {
+			m_enabled = false;
+			removeKeyListeners();
+		}
+	}
+
 	public function set m_sModifierKeyName(string:String):void {
 		m_modifierKeyName = string.toLowerCase();
 	}
@@ -88,13 +99,11 @@ public class SimpleKeyEventHelper extends BaseControl {
 	}
 
 	public function Enable():void {
-		m_enabled = true;
-		addKeyListeners();
+		m_bEnabled = true;
 	}
 
 	public function Disable():void {
-		m_enabled = false;
-		removeKeyListeners();
+		m_bEnabled = false;
 	}
 
 	private function GetKeyCodeFromString(keyName:String):uint {

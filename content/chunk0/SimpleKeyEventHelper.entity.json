@@ -11,6 +11,7 @@
 			"inputCopying": { "Enable": { "Enable": ["cafe457f1b485c64"] }, "Disable": { "Disable": ["cafe457f1b485c64"] } },
 			"propertyAliases": {
 				"m_pDataProvider": [{ "originalProperty": "m_pDataProvider", "originalEntity": "cafe457f1b485c64" }],
+				"m_bEnabled": [{ "originalProperty": "m_bEnabled", "originalEntity": "cafe457f1b485c64" }],
 				"m_sModifierKeyName": [{ "originalProperty": "m_sModifierKeyName", "originalEntity": "cafe457f1b485c64" }],
 				"m_sKeyName": [{ "originalProperty": "m_sKeyName", "originalEntity": "cafe457f1b485c64" }]
 			},
@@ -32,6 +33,7 @@
 				},
 				"m_sClassName": { "type": "ZString", "value": "simplekeyeventhelper.SimpleKeyEventHelper" },
 				"m_pDataProvider": { "type": "SEntityTemplateReference", "value": null },
+				"m_bEnabled": { "type": "bool", "value": true },
 				"m_sModifierKeyName": { "type": "ZString", "value": "None" },
 				"m_sKeyName": { "type": "ZString", "value": "" }
 			},
