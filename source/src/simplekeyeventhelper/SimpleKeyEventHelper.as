@@ -2,6 +2,7 @@ package simplekeyeventhelper {
 import common.BaseControl;
 
 import flash.events.Event;
+import flash.events.FocusEvent;
 import flash.events.KeyboardEvent;
 import flash.ui.Keyboard;
 import flash.utils.describeType;
@@ -17,7 +18,8 @@ public class SimpleKeyEventHelper extends BaseControl {
 
 	public function SimpleKeyEventHelper() {
 		addEventListener(Event.ADDED_TO_STAGE, onAdded);
-		addEventListener(Event.REMOVED_FROM_STAGE, onRemoved);
+		addEventListener(FocusEvent.FOCUS_IN, onFocusIn);
+		addEventListener(FocusEvent.FOCUS_OUT, onFocusOut);
 	}
 
 	public function onSetData(object:Object):void {
@@ -32,11 +34,16 @@ public class SimpleKeyEventHelper extends BaseControl {
 	private function onAdded(event:Event):void {
 		if (m_enabled) {
 			addKeyListeners();
+		}
+	}
+
+	private function onFocusIn(event:FocusEvent):void {
+		if (m_enabled) {
 			Send_onFocusAdded();
 		}
 	}
 
-	private function onRemoved(event:Event):void {
+	private function onFocusOut(event:FocusEvent):void {
 		if (m_enabled) {
 			Send_onFocusRemoved();
 		}
