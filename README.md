@@ -10,8 +10,6 @@ Adds a helper entitytemplate for developers who wish to add custom key bindings 
 
 -   Toggling the `m_bEnabled` property results in the keybinds not being set correctly if you are using the dynamic object method. I suspect the game for some reason falls back to the `m_sModifierKeyName` and `m_sKeyName` properties.
     -   Workaround: Use the Enable/Disable pins instead or send the `NotifyDataChanged` input pin to the dynamic object entity for the keybinds to get restored.
--   The game will sometimes take stage focus away when you interact with menu items. This causes the keybord events to be ignored entirely.
-    -   Workaround: Cicking the mouse in an empty spot in the pause menu seems to bring stage focus back to this mod. I want to fix this properly though but I'm honestly not sure how.
 
 ## Usage
 
