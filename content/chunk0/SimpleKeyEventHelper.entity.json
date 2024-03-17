@@ -37,6 +37,10 @@
 				"m_sModifierKeyName": { "type": "ZString", "value": "None" },
 				"m_sKeyName": { "type": "ZString", "value": "" }
 			},
+			"events": {
+				"onFocusAdded": { "SetTrue": ["cafea42ab80074e5"] },
+				"onFocusRemoved": { "SetFalse": ["cafea42ab80074e5"] }
+			},
 			"outputCopying": {
 				"Pressed": { "Pressed": ["cafe099752f99e2c"] },
 				"Down": { "Down": ["cafe099752f99e2c"] },
@@ -49,6 +53,48 @@
 			"factory": "[modules:/zuicontroltreeentity.class].pc_entitytype",
 			"blueprint": "[modules:/zuicontroltreeentity.class].pc_entityblueprint",
 			"properties": { "m_pRootControlEntity": { "type": "SEntityTemplateReference", "value": "cafe457f1b485c64" } }
+		},
+		"cafe9eba71ce2ad7": {
+			"parent": "cafe099752f99e2c",
+			"name": "MenuCondition",
+			"factory": "[modules:/zmenucondition.class].pc_entitytype",
+			"blueprint": "[modules:/zmenucondition.class].pc_entityblueprint",
+			"properties": { "m_bAnyPausingMenu": { "type": "bool", "value": true } }
+		},
+		"cafea42ab80074e5": {
+			"parent": "cafe099752f99e2c",
+			"name": "Has focus",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": false } }
+		},
+		"cafe7b048464ae75": {
+			"parent": "cafe099752f99e2c",
+			"name": "ValueBool_Operation",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe311535ba0dbc", "cafe1e0d0d098557"]
+				},
+				"m_eEvaluation": { "type": "ZValueBool_Operation_Signal.EEvaluationType", "value": "ALL" }
+			},
+			"events": { "OnTrue": { "SetFocus": ["cafe457f1b485c64"] } }
+		},
+		"cafe311535ba0dbc": {
+			"parent": "cafea42ab80074e5",
+			"name": "Has lost focus",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": { "m_rCondition": { "type": "SEntityTemplateReference", "value": "cafea42ab80074e5" } }
+		},
+		"cafe1e0d0d098557": {
+			"parent": "cafe9eba71ce2ad7",
+			"name": "Has unpaused",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": { "m_rCondition": { "type": "SEntityTemplateReference", "value": "cafe9eba71ce2ad7" } }
 		}
 	},
 	"propertyOverrides": [],

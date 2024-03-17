@@ -17,6 +17,7 @@ public class SimpleKeyEventHelper extends BaseControl {
 
 	public function SimpleKeyEventHelper() {
 		addEventListener(Event.ADDED_TO_STAGE, onAdded);
+		addEventListener(Event.REMOVED_FROM_STAGE, onRemoved);
 	}
 
 	public function onSetData(object:Object):void {
@@ -31,6 +32,19 @@ public class SimpleKeyEventHelper extends BaseControl {
 	private function onAdded(event:Event):void {
 		if (m_enabled) {
 			addKeyListeners();
+			Send_onFocusAdded();
+		}
+	}
+
+	private function onRemoved(event:Event):void {
+		if (m_enabled) {
+			Send_onFocusRemoved();
+		}
+	}
+
+	public function SetFocus():void {
+		if (m_enabled) {
+			stage.focus = this;
 		}
 	}
 
@@ -126,6 +140,14 @@ public class SimpleKeyEventHelper extends BaseControl {
 
 	public function Send_Up():void {
 		sendEvent("Up");
+	}
+
+	public function Send_onFocusRemoved():void {
+		sendEvent("onFocusRemoved");
+	}
+
+	public function Send_onFocusAdded():void {
+		sendEvent("onFocusAdded");
 	}
 
 }
