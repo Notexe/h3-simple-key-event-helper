@@ -1,0 +1,7 @@
+{
+	"compilerOptions": {
+		"source-path": ["src"],
+		"output": "bin/SimpleKeyEventHelper.swf"
+	},
+	"mainClass": "Main"
+}

@@ -1,0 +1,18 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile release and export using G2GFxDataTool",
+			"type": "shell",
+			"command": "D:\\Tools\\G2GFxDataTool\\G2GFxDataTool.exe -i bin\\SimpleKeyEventHelper.swf -o ..\\content\\chunk0\\scaleform\\",
+			"dependsOn": ["ActionScript: compile release - asconfig.json"],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
