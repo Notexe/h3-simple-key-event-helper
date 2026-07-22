@@ -2,8 +2,6 @@
 
 Adds a helper entitytemplate for developers who wish to add custom key bindings into their mod.
 
-[Install](https://hitman-resources.netlify.app/smf-install-link/https://github.com/Notexe/h3-simple-key-event-helper/releases/latest/download/mod.framework.zip) | [Download](https://github.com/Notexe/h3-simple-key-event-helper/releases/latest/download/mod.framework.zip)
-
 ---
 
 ## Known issues
